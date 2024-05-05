@@ -112,14 +112,16 @@
       <!-- Header top -->
       <div class="header-top">
         <div class="container row">
-          <a href="/">
+          <a href="/f8-htmlcss-03_1">
             <img src="./assets/images/logo.svg" alt="Modulars" />
           </a>
 
           <nav class="navbar row">
             <ul class="navbar__list row">
               <li class="navbar__item">
-                <a href="/" class="navbar__link navbar__active">Home</a>
+                <a href="/f8-htmlcss-03_1" class="navbar__link navbar__active"
+                  >Home</a
+                >
               </li>
               <li class="navbar__item">
                 <a href="#!" class="navbar__link">About</a>
@@ -191,7 +193,7 @@
 
     <main>
       <!-- ===== Brands ===== -->
-      <div class="brands">
+      <section class="brands">
         <div class="container row">
           <p class="brands__google">Google</p>
           <p class="brands__slack row">
@@ -209,7 +211,76 @@
             />HEROKU
           </p>
         </div>
-      </div>
+      </section>
+
+      <!-- ===== Services ===== -->
+      <section class="services">
+        <div class="container">
+          <section class="services__header row">
+            <div class="services__header-left">
+              <p class="services__subtitle">OUR SERVICES</p>
+              <h2 class="services__heading">
+                We offer a wide range of design services
+              </h2>
+            </div>
+            <div class="services__control">
+              <i class="fa-solid fa-arrow-left"></i
+              ><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </section>
+
+          <div class="services__list">
+            <article class="services__item">
+              <figure class="services__thumb">
+                <img
+                  src="./assets/images/services-1.jpg"
+                  alt="Branding"
+                  class="services__img"
+                />
+              </figure>
+              <div class="services__body">
+                <h2 class="services__title">Branding</h2>
+                <p class="services__desc line-clamp">
+                  Create beautiful Agency website with Boluethat converts more
+                  visitors than any website.
+                </p>
+              </div>
+            </article>
+            <article class="services__item">
+              <figure class="services__thumb">
+                <img
+                  src="./assets/images/services-2.jpg"
+                  alt="Web Design"
+                  class="services__img"
+                />
+              </figure>
+              <div class="services__body">
+                <h2 class="services__title">Web Design</h2>
+                <p class="services__desc line-clamp">
+                  Create beautiful Agency website with Boluethat converts more
+                  visitors than any website.
+                </p>
+              </div>
+            </article>
+            <article class="services__item">
+              <figure class="services__thumb">
+                <img
+                  src="./assets/images/services-3.jpg"
+                  alt="Graphic Design"
+                  class="services__img"
+                />
+              </figure>
+              <div class="services__body">
+                <h2 class="services__title">Graphic Design</h2>
+                <p class="services__desc line-clamp">
+                  Create beautiful Agency website with Boluethat converts more
+                  visitors than any website.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
