@@ -18,6 +18,7 @@ body {
 /* ===== Common ===== */
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -998,6 +999,7 @@ a {
   grid-auto-rows: 521px;
   grid-auto-flow: column;
   column-gap: 30px;
+  overflow: hidden;
 }
 
 .blog__item {
@@ -1060,4 +1062,115 @@ a {
   color: #575d5e;
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* ===== Footer ===== */
+.footer {
+  margin-top: 100px;
+  padding: 72px 0 50px;
+  background-color: var(--primary-bg-color);
+}
+
+.footer__cta {
+  width: 38%;
+}
+
+.footer__form {
+  position: relative;
+}
+
+.footer__form-label {
+  display: block;
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.footer__form-input,
+.footer__form-input::placeholder {
+  color: #6a8383;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.footer__form-input {
+  width: 80%;
+  display: inline-block;
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #6a8383;
+  background-color: var(--primary-bg-color);
+}
+
+.footer__form-btn {
+  position: absolute;
+  right: 20%;
+  bottom: 22px;
+  display: inline-block;
+  width: 28px;
+  height: 18px;
+  border: none;
+  color: #c4c4c4;
+  background: var(--primary-bg-color) url("../images/arrow-right.svg") no-repeat;
+  cursor: pointer;
+}
+
+.footer__social {
+  margin-top: 45px;
+}
+
+.footer__social a + a {
+  margin-left: 22px;
+}
+
+.footer__social .fa-brands {
+  width: 52px;
+  height: 52px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #265252;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.footer__social .fa-brands:hover {
+  background-color: #a75325;
+  border: 1px solid #a75325;
+}
+
+.footer__list {
+  margin-left: auto;
+  gap: 50px;
+}
+
+.footer__list li {
+  margin-top: 10px;
+}
+
+.footer__item-title {
+  color: #fff;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.footer__item-link {
+  color: #6a8383;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 500;
+}
+
+.footer__line {
+  margin: 45px auto 0;
+  width: 1140px;
+  max-width: calc(100vw - 48px);
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #143c3c 2.28%,
+    #295a5a 55.65%,
+    rgba(38, 82, 82, 0) 102.06%
+  );
 }
