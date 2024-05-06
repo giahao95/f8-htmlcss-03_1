@@ -260,6 +260,9 @@ a {
   padding: 76px 121px;
   background-color: var(--secondary-bg-color);
   border-radius: 999px;
+}
+
+.brands a {
   color: var(--primary-bg-color);
 }
 
@@ -301,7 +304,7 @@ a {
 }
 
 .brand__heroku-img {
-  margin-right: 14px;
+  margin-right: 6px;
 }
 
 /* ===== Services ===== */
@@ -382,7 +385,7 @@ a {
   grid-auto-columns: calc((100% / 3 - 10.66px));
   grid-auto-flow: column;
   column-gap: 16px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .services__item {
@@ -697,14 +700,15 @@ a {
   gap: 64px;
   padding: 54px 41px 28px 20px;
   border-radius: 33px;
+  transition: all 0.3s;
 }
 
-.process__item:first-child {
+.process__item:hover {
   border-radius: 33px;
   background-color: #e2eddf;
 }
 
-.process__item:not(:first-child)::after {
+.process__item::after {
   content: "";
   position: absolute;
   left: 0;
@@ -717,6 +721,11 @@ a {
     #83a17d 4.17%,
     rgba(131, 161, 125, 0) 36.46%
   );
+}
+
+.process__item:hover::after {
+  content: "";
+  visibility: hidden;
 }
 
 .process__item-number {
@@ -999,12 +1008,12 @@ a {
   grid-auto-rows: 521px;
   grid-auto-flow: column;
   column-gap: 30px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .blog__item {
   cursor: pointer;
-  border-radius: 0 0 20px 20px;
+  border-radius: 40px 40px 20px 20px;
   transition: all 0.3s;
 }
 
